@@ -1,0 +1,33 @@
+<table class="ui celled table">
+  <thead>
+  <tr>
+    <th>Date</th>
+    <th>Weight</th>
+    <th>Chest</th>
+    <th>Thigh</th>
+    <th>Upper Arm</th>
+    <th>Waist</th>
+    <th>Hips</th>
+    <th>Trend</th>
+    <th>Comment</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+    {{#each assessments}}
+    <tr>
+      <td> {{date}} </td>
+      <td> {{weight}} </td>
+      <td> {{chest}} </td>
+      <td> {{thigh}} </td>
+      <td> {{upperArm}} </td>
+      <td> {{waist}} </td>
+      <td> {{hips}} </td>
+        <!--If the trend value is true, a green upwards arrow is displayed. If it's false, a red downwards arrow is displayed.-->
+      <td> {{#if trend}} <i class='large green arrow circle up icon'></i> {{else}} <i class='large red arrow circle down icon'></i> {{/if}}</td>
+      <td> {{comment}} </td>
+      <td><a href="dashboard/deleteAssessment/{{id}}"><i class="ui large grey trash icon"></i></a> </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

@@ -1,0 +1,38 @@
+<table class="ui celled table">
+    <thead>
+    <tr>
+        <th>Goal Date</th>
+        <th>Weight</th>
+        <th>Chest</th>
+        <th>Thigh</th>
+        <th>Upper Arm</th>
+        <th>Waist</th>
+        <th>Hips</th>
+        <th>Status</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each goals}}
+        <tr>
+            <td> {{date}} </td>
+            <td> {{weight}} </td>
+            <td> {{chest}} </td>
+            <td> {{thigh}} </td>
+            <td> {{upperArm}} </td>
+            <td> {{waist}} </td>
+            <td> {{hips}} </td>
+            <td>
+                <!--Handlebars registered helpers are used here to display the correct status of the goal-->
+                <!--If the isOpen method is true, the 'Open' message is displayed-->
+                {{#if (isOpen status)}} Open <i class='large blue clock icon'></i> {{/if}}
+                <!--If the isAchieved method is true, the 'Achieved' message is displayed-->
+                {{#if (isAchieved status)}} Achieved <i class='large green check circle icon'></i> {{/if}}
+                <!--If the isMissed method is true, the 'Missed' message is displayed-->
+                {{#if (isMissed status)}} Missed <i class='large red minus circle icon'></i> {{/if}}
+            </td>
+            <td><a href="deleteGoal/{{id}}"><i class="ui large grey trash icon"></i></a> </td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>

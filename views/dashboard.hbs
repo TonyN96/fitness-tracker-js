@@ -1,0 +1,44 @@
+{{> menu id="dashboard" }}
+
+<!--https://jqueryui.com/dialog/-->
+<!--Dialog box which only appears when the user loads the page for the first time in that session-->
+<div id="dialog" title="Your Goals" style="display: none;">
+    <ul style="list-style: none">
+        <!--Gets the value of the openGoals object in the goalsCount array-->
+        <li><i class='large blue clock icon'></i>Open Goals: {{goalsCount.openGoals}}</li>
+        <!--Gets the value of the achievedGoals object in the goalsCount array-->
+        <li><i class='large green check circle icon'></i>Achieved Goals: {{goalsCount.achievedGoals}}</li>
+        <!--Gets the value of the missedGoals object in the goalsCount array-->
+        <li><i class='large red minus circle icon'></i>Missed Goals: {{goalsCount.missedGoals}}</li>
+    </ul>
+</div>
+
+<section class="ui segment">
+
+  <div class="ui segment center aligned four column stackable grid">
+    <div class="ui column">
+      <i class="huge user icon"></i><br>
+      <h2 style="text-transform: uppercase; margin-top: 10px">{{name}}</h2>
+    </div>
+    <div class="ui column">
+        <div id="idealWeightIcon">{{#if weightIndicator}} <i class='huge green dashboard icon'></i> {{else}} <i class='huge red dashboard icon'></i> {{/if}}</div>
+      <h2 style="margin-top: 10px">IDEAL WEIGHT INDICATOR</h2>
+      
+    </div>
+    <div class="ui column">
+      <i class="huge heartbeat icon"></i> <span style="display: inline; font-size: 45px; vertical-align: middle;">{{bmi}}</span> <br>
+      <h2 style="margin-top: 10px">BMI</h2>
+    </div>
+    <div class="ui column">
+      <i class="huge user md icon"></i><br>
+      <span style="font-size: 45px; vertical-align: middle;"><h2 style="margin-top: 10px; text-transform: uppercase;">{{bmiCategory}}</h2></span>
+    </div>
+  </div>
+
+    <h2>Goals</h2>
+    {{> listgoals }}
+    {{> addgoal }}
+    <h2>Assessments</h2>
+    {{> listassessments }}
+    {{> addassessment }}
+</section>

@@ -1,0 +1,38 @@
+{
+  "goalsCollection": [
+    {
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "date": "01-03-2021",
+      "weight": 110,
+      "chest": 38,
+      "thigh": 10.6,
+      "upperArm": 12.5,
+      "waist": 20,
+      "hips": 26.3,
+      "status": "Open"
+    },
+    {
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "id": "151fb5b0-df0d-11ea-867b-6bd85a1c3a82",
+      "date": "05-08-2020",
+      "weight": 120,
+      "chest": 44,
+      "thigh": 12,
+      "upperArm": 16,
+      "waist": 23,
+      "hips": 30,
+      "status": "Achieved"
+    },
+    {
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "id": "63afbb50-e92e-11ea-b005-318131f04e40",
+      "date": "13-11-2019",
+      "weight": 112,
+      "chest": 40,
+      "thigh": 10,
+      "upperArm": 14,
+      "waist": 20,
+      "hips": 26
+    }
+  ]
+}

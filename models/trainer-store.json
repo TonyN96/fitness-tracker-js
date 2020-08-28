@@ -1,0 +1,9 @@
+{
+  "trainers": [
+    {
+      "name": "Marge Simpson",
+      "email": "marge@simpson.com",
+      "password": "secret"
+    }
+  ]
+}

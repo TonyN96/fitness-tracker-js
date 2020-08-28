@@ -1,0 +1,66 @@
+{{> menu id="dashboard" }}
+
+<section class="ui segment">
+
+    <div class="ui segment center aligned four column stackable grid">
+        <div class="ui column">
+            <i class="huge user icon"></i><br>
+            <h2 style="text-transform: uppercase; margin-top: 10px">{{selectedMember.name}}</h2>
+        </div>
+        <div class="ui column">
+            <div id="idealWeightIcon">{{#if weightIndicator}} <i class='huge green dashboard icon'></i> {{else}} <i class='huge red dashboard icon'></i> {{/if}}</div>
+            <h2 style="margin-top: 10px">IDEAL WEIGHT INDICATOR</h2>
+        </div>
+        <div class="ui column">
+            <i class="huge heartbeat icon"></i> <span style="display: inline; font-size: 45px; vertical-align: middle;">{{bmi}}</span> <br>
+            <h2 style="margin-top: 10px">BMI</h2>
+        </div>
+        <div class="ui column">
+            <i class="huge user md icon"></i><br>
+            <span style="font-size: 45px; vertical-align: middle;"><h2 style="margin-top: 10px; text-transform: uppercase;">{{bmiCategory}}</h2></span>
+        </div>
+    </div>
+
+    {{> listgoals }}
+    {{> addgoal }}
+
+    {{#each selectedMemberAssessments}}
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th>Date</th>
+                <th>Weight</th>
+                <th>Chest</th>
+                <th>Thigh</th>
+                <th>Upper Arm</th>
+                <th>Waist</th>
+                <th>Hips</th>
+                <th>Trend</th>
+                <th>Comment</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td> {{date}} </td>
+                <td> {{weight}} </td>
+                <td> {{chest}} </td>
+                <td> {{thigh}} </td>
+                <td> {{upperArm}} </td>
+                <td> {{waist}} </td>
+                <td> {{hips}} </td>
+                <td> {{#if trend}} <i class='large green arrow circle up icon'></i> {{else}} <i class='large red arrow circle down icon'></i> {{/if}}</td>
+                <td> {{comment}} </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h3>Comments</h3>
+
+        <form class="ui form" action="/trainerView/{{userid}}/addComment/{{id}}" method="POST">
+            <input placeholder="Enter comment here" type="text" name="comment">
+            <button style="margin-top: 20px" class="ui blue submit button">Update</button>
+        </form>
+
+    {{/each}}
+
+</section>

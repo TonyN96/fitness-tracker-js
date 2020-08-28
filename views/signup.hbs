@@ -1,0 +1,49 @@
+{{> welcomemenu id="signup" }}
+
+<div class="ui two column grid basic middle aligned segment">
+    <div class="column">
+        <form class="ui stacked segment form" action="/register" method="POST">
+            <h3 class="ui header">Register</h3>
+            <div class="two fields">
+                <div class="field">
+                    <label>Full Name</label>
+                    <input placeholder="Name" type="text" name="name">
+                </div>
+                <div class="field">
+                    <label>Gender</label>
+                    <select class="ui fluid dropdown" name="gender">
+                        <option value="Unspecified">Unspecified</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input placeholder="Email" type="text" name="email">
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" name="password">
+            </div>
+            <div class="field">
+                <label>Address</label>
+                <input placeholder="Address" type="text" name="address">
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    <label>Height (m)</label>
+                    <input placeholder="0.00m" type="text" name="height">
+                </div>
+                <div class="field">
+                    <label>Starting Weight (kg)</label>
+                    <input placeholder="00.00kg" type="text" name="startingWeight">
+                </div>
+            </div>
+            <button class="ui blue submit button">Submit</button>
+        </form>
+    </div>
+    <div class="column">
+        <img class="ui image" src="https://cdn.glitch.com/cf728c21-a763-4fcd-9e99-bc7231a197e4%2Fseticon.jpg?v=1596724723499" alt="icons" width="100%">
+    </div>
+</div>
