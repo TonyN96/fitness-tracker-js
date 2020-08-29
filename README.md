@@ -1,4 +1,5 @@
-Welcome to the Playlist 2
+Welcome to the Gym Utility App
 =========================
 
-Version 2 of the Playlist application
+Version 1 of the Gym Utility application
+Submission for ICT Skills assignment from HDip in CS
