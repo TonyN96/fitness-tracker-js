@@ -1,4 +1,4 @@
-# Fitness Tracker App
+# Fitness Tracker App - JavaScript
 
 This web application is designed for users to record and monitor their fitness activity. The app features user accounts and can be accessed as a member or a trainer.
 
