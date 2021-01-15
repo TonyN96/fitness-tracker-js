@@ -23,8 +23,8 @@ The following details are stored in the app for each member:
 ## Technologies
 - HTML, JavaScript
 - Model-view-controller framework
-- Handlbars.js templating (https://handlebarsjs.com/)
-- Semantic UI framework (https://semantic-ui.com/)
+- [Handlbars.js templating](https://handlebarsjs.com/)
+- [Semantic UI framework](https://semantic-ui.com/)
 
 ## Usage
 
