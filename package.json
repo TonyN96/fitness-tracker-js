@@ -1,7 +1,7 @@
 {
-  "name": "ict-skills-assignment",
+  "name": "fitness-tracker-js",
   "version": "0.0.1",
-  "description": "ICT Skills assignment from HDip in CS",
+  "description": "Web app designed to monitor gym activity and fitness progression.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -22,13 +22,17 @@
     "node": "12.x"
   },
   "repository": {
-    "url": "https://github.com/TonyN96/ict-skills-assignment"
+    "url": "https://github.com/TonyN96/fitness-tracker-js"
   },
   "license": "MIT",
   "keywords": [
+    "javascript",
     "node",
-    "glitch",
-    "express"
+    "express",
+    "handlebars",
+    "fitness",
+    "tracker",
+    "gym"
   ],
   "prettier": {
     "singleQuote": false,

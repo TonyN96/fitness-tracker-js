@@ -17,9 +17,6 @@ app.engine(
   exphbs({
     extname: ".hbs",
     defaultLayout: "main",
-    //https://stackoverflow.com/questions/41764373/how-to-register-custom-handlebars-helpers
-    //https://handlebarsjs.com/guide/builtin-helpers.html#if
-    //https://stackabuse.com/guide-to-handlebars-templating-engine-for-node/
     //Custom helper functions being defined to display the status of the goals
     helpers: {
       isOpen: function (status) {
@@ -53,7 +50,7 @@ const routes = require("./routes");
 app.use("/", routes);
 
 const listener = app.listen(process.env.PORT || 4000, function() {
-  logger.info(`Gym Utility App started on port: ${listener.address().port}`);
+  logger.info(`Fitness Tracker App started on port: ${listener.address().port}`);
 });
 
 
