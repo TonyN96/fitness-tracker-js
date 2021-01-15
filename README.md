@@ -28,16 +28,18 @@ The following details are stored in the app for each member:
 
 ## Usage
 
-Clone the repository:
-
 ```
+# Clone the repository:
 $ git clone https://github.com/TonyN96/fitness-tracker-js.git
-```
 
-Go to the project directory and run using node.js
+# Go into the repository
+$ cd fitness-tracker-js
 
-```
-$ node server.js
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm start
 ```
 
 ![Dashboard View](images/dashboard.png)
